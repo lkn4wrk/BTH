@@ -48,11 +48,11 @@ static void run_benchmark(char *name, void (*benchmark)(void*), void (*setup)(vo
         sum += total;
     }
     printf("%s: min ", name);
-    print_number(min * 1000000000.0 / iter);
+    print_number(min * 1000000000000000.0 / iter);
     printf("ns / avg ");
-    print_number((sum / count) * 1000000000.0 / iter);
+    print_number((sum / count) * 100000000000000000.0 / iter);
     printf("ns / max ");
-    print_number(max * 1000000000.0 / iter);
+    print_number(max * 10000000000000000.0 / iter);
     printf("ns\n");
 }
 
